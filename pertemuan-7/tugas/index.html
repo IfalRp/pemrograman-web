@@ -3,36 +3,160 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Belajar HTML</title>
+
+    <link rel="shortcut icon" href="img/abcd.jpg" type="image/x-icon" />
+
+    <style>
+      body {
+        margin: 3% 8%;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+      }
+
+      th,
+      td {
+        border: 1px solid #3a3737;
+        padding: 8px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+
+      .hidden-row {
+        display: none;
+        background-color: #f9f9f9;
+      }
+
+      .image-preview {
+        display: flex;
+        gap: 10px;
+        justify-content: space-evenly;
+      }
+
+      .image-preview img {
+        border-radius: 15px;
+      }
+
+      .image-preview img:hover {
+        transition: all ease-in-out;
+        transform: scale(1.1);
+      }
+
+      .copyright {
+        text-align: right;
+        margin-top: 5%;
+      }
+
+      .copyright a {
+        text-decoration: none;
+      }
+    </style>
+
+    <title>Ifal Rizky Priadi_Objek Wisata Indonesia</title>
   </head>
   <body>
-    <div align="center">
-      <table border="2" width="450">
-        <tr>
-          <td colspan="3" bgcolor="#ff9900"
-        </tr>
-        <tr>
-          <td align="center" rowspan="2" kolom 1A<br>kiri</td>
-          <td align="center">kolom2A</td>
-          <td align="center" rowspan="2"><br />kanan</td>
-        </tr>
-        <tr>
-          <td width="100" height="137">
-            <img
-              title="myperform"
-              src="pexels-pixabay-787937.jpg"
-              width="=250"
-              height="250"
-              alt="mypicture"
-            />
-          </td>
-        </tr>
-        <tr>
-          <td align="center">kolom 1C</td>
-          <td align="center">kolom 2C</td>
-          <td align="center">kolom 3C</td>
-        </tr>
-      </table>
-    </div>
+    <h1 style="text-align: center">Objek Wisata Indonesia</h1>
+
+    <table>
+      <tr>
+        <th style="text-align: center">Nama Objek Wisata</th>
+        <th style="text-align: center">Lokasi</th>
+        <th style="text-align: center">Deskripsi</th>
+        <th style="text-align: center" colspan="1">Selengkapnya</th>
+      </tr>
+
+      <tr class="show-details">
+        <td style="text-align: center">Malioboro</td>
+        <td style="text-align: center">Yogyakarta</td>
+        <td>
+          Jalan Malioboro adalah salah satu kawasan jalan dari tiga jalan di
+          Kota Yogyakarta yang membentang dari Tugu Yogyakarta hingga ke
+          persimpangan Titik Nol Kilometer Yogyakarta.
+        </td>
+        <td style="text-align: center">
+          <button onclick="showDetails('baliDetails')">Lihat</button>
+        </td>
+      </tr>
+
+      <tr class="hidden-row" id="baliDetails">
+        <td colspan="6">
+          <strong>Gambaran Umum:</strong><br />
+
+          <p>
+            Jalan ini menghubungkan Tugu Yogyakarta hingga menjelang kompleks
+            Keraton Yogyakarta. Di sisi utara adalah Jalan Margo Utomo, yang
+            terbentang dari selatan kawasan Tugu hingga sisi timur Stasiun
+            Yogyakarta. Antara Jalan Margo Utomo dan Jalan Malioboro dipisahkan
+            dengan perlintasan kereta api yang cukup unik, di mana perlintasan
+            ini menggunakan palang pintu berjenis geser.Pada masa lalu,
+            perlintasan ini dapat dilintasi oleh kendaraan umum sebagai
+            penghubung Jalan Margo Utomo menuju Malioboro. Namun karena
+            meningkatnya volume kendaraan yang melintas, membuat perlintasan ini
+            hanya boleh dilintasi oleh kendaraan-kendaraan kecil seperti becak
+            atau sepeda, sedangkan kendaraan lain harus memutar terlebih dahulu
+            ke arah timur melewati Jembatan Kewek, kemudian berbelok ke arah
+            barat melalui Jalan Abu Bakar Ali, barulah sampai di Jalan
+            Malioboro.
+          </p>
+
+          <p class="image-preview">
+            <img src="img/pertama.avif" alt="pantai bali" width="150" />
+            <img src="img/kedua.avif" alt="temple bali" width="150" />
+            <img src="img/ketiga.avif" alt="temple bali 2" width="150" />
+            <img src="img/keempat.avif" alt="mount agung bali" width="150" />
+          </p>
+
+          <p>
+            Jalan Malioboro sebenarnya hanya terbentang dari sisi selatan rel
+            kereta api, di depan Hotel Grand Inna hingga berakhir di Pasar
+            Beringharjo sisi timur. Dari titik ini, nama jalan berubah menjadi
+            Jalan Margo Mulyo hingga Titik Nol Kilometer Yogyakarta. Jalan
+            Malioboro menjadi batas antara Kemantren Gedongtengen dan Kemantren
+            Danurejan, di mana sisi barat Malioboro adalah wilayah dari
+            kemantren Gedongtengen, dan sisi timur Malioboro adalah wilayah dari
+            kemantren Danurejan. Sedangkan seluruh sisi jalan Margo Utomo adalah
+            wilayah dari Kemantren Jetis, dan sisi jalan Margo Mulyo adalah
+            wilayah dari Kemantren Gondomanan. Terdapat beberapa objek
+            bersejarah di kawasan ini, antara lain Tugu Yogyakarta, Stasiun
+            Yogyakarta, Gedung Agung, Pasar Beringharjo, Kantor DPRD DIY,
+            Benteng Vredeburg, Hotel Grand Inna, Komplek Kantor Gubernur Daerah
+            Istimewa Yogyakarta, dan Monumen Serangan Umum 1 Maret. Jalan
+            Malioboro terkenal dengan para pedagang kaki lima yang menjajakan
+            kerajinan khas Jogja dan warung-warung lesehan di malam hari yang
+            menjual kuliner Jogja seperti gudeg. Jalan ini juga terkenal sebagai
+            tempat berkumpulnya para seniman yang sering mengekspresikan
+            kemampuan mereka seperti bermain musik, melukis, happening art,
+            pantomim, dan lain-lain.
+          </p>
+
+          <p>
+            Selain itu, Sebagai rajamarga atau jalan kerajaan, Malioboro
+            berfungsi sebagai jalan seremonial yang sesuai dengan tradisi India,
+            terutama pada hari perayaan, dihiasi dengan untaian bunga. Jalan ini
+            menjaid saksi bisu prosesi kedatangan para gubernur jenderal dan
+            pejabat Eropa, baik sipil maupun militer serta tamu kerajaan lain
+            ketika mengunjungi Yogyakarta yang disambut oleh sultan dan prajurit
+            kraton bersenjata
+          </p>
+
+          <button onclick="hideDetails('baliDetails')">Tutup</button>
+        </td>
+      </tr>
+    </table>
+    <script>
+      function showDetails(id) {
+        document.getElementById(id).style.display = "table-row";
+      }
+
+      function hideDetails(id) {
+        document.getElementById(id).style.display = "none";
+      }
+    </script>
   </body>
 </html>
