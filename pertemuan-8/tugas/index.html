@@ -12,17 +12,17 @@
       <div class="container">
         <h1 class="text-center mb-4 text-info">FREE REGISTRATION</h1>
         <div class="offset-lg-2 col-lg-8">
-          <di>
+          <form>
             <!-- form nama -->
             <label for="nama" class="form-label">Nama</label>
-              <div class="mb-3 row">
-                <div class="col">
-                  <input type="text" id="Nama" placeholder="Depan" class="form-control" autocomplete="off" />
-                </div>
-                <div class="col">
-                  <input type="text" id="Nama" placeholder="Belakang" class="form-control" autocomplete="off" />
-                </div>
+            <div class="mb-3 row">
+              <div class="col">
+                <input type="text" id="Nama" placeholder="Depan" class="form-control" autocomplete="off" />
               </div>
+              <div class="col">
+                <input type="text" id="Nama" placeholder="Belakang" class="form-control" autocomplete="off" />
+              </div>
+            </div>
             <!-- form tanggal lahir -->
             <div class="mb-3">
               <label for="Tanggal Lahir" class="form-label">Tanggal Lahir</label>
@@ -60,34 +60,24 @@
             </div>
             <!-- form jenis kelamin -->
             <div class="mb-3">
-                  <label for="Jenis Kelamin" class="form-label">Jenis Kelamin</label>
-                  <input type="radio" id="Jenis Kelamin 1" value="Laki-Laki" class="form-check-input" /> Laki-Laki 
-                  <input type="radio" id="Jenis Kelamin 2" value="Perempuan" class="form-check-input" /> Perempuan
+              <label for="Jenis Kelamin" class="form-label">Jenis Kelamin</label>
+              <input type="radio" id="Jenis Kelamin 1" value="Laki-Laki" class="form-check-input" /> Laki-Laki <input type="radio" id="Jenis Kelamin 2" value="Perempuan" class="form-check-input" /> Perempuan
             </div>
-              <!-- form akhir jenis kelamin -->
-              <!-- form hobby -->
-              <div class="mb-3">
-                <label for="Hobby" class="form-chech-label" id="Hobby">Hobby</label>
-                <div class="offset-lg-1 col-lg-4">
-                  <input type="checkbox" id="Hobby1" value="Reading"> Reading
-                </div>
-                <div class="offset-lg-1 col-lg-4">
-                    <div>
-                      <input type="checkbox" id="Hobby2" value="Sport"> Sport
-                    </div>
-                  <div>
-                    <input type="checkbox" id="Hobby3" value="Singing"> Singing
-                  </div>
-                  <div>
-                    <input type="checkbox" id="Hobby4" value="Traveling"> Traveling
-                  </div>
-                </div>
+            <!-- form akhir jenis kelamin -->
+            <!-- form hobby -->
+            <div class="mb-3">
+              <label for="Hobby" class="form-chech-label" id="Hobby">Hobby</label>
+              <div class="offset-lg-1 col-lg-4"><input type="checkbox" id="Hobby1" value="Reading" /> Reading</div>
+              <div class="offset-lg-1 col-lg-4">
+                <div><input type="checkbox" id="Hobby2" value="Sport" /> Sport</div>
+                <div><input type="checkbox" id="Hobby3" value="Singing" /> Singing</div>
+                <div><input type="checkbox" id="Hobby4" value="Traveling" /> Traveling</div>
               </div>
-              <!-- from akhir hobby -->
             </div>
+            <!-- from akhir hobby -->
             <div class="offset-lg-5 col-lg-20 mb-3">
-              <button type="submit" class="btn btn-primary">Kirim</button> 
-              <button type="reset" class="btn btn-primary">Cancel</button>
+              <button type="submit" value="Kirim">Kirim</button>
+              <button type="reset" value="Cancel">Cancel</button>
             </div>
           </form>
         </div>
