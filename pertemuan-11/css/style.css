@@ -1,0 +1,19 @@
+body {
+  background-color: DarkGray;
+  min-height: 100vh;
+  color: LightCyan;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: column;
+}
